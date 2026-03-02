@@ -378,4 +378,17 @@ kubectl delete services myservice
 ```
 kubectl delete deployment myservice
 ```
+# Docker Image
 
+The Docker image of the MyService application is available on Docker Hub:
+
+docker pull yass0u20/myservice:1
+
+Docker Hub repository:
+https://hub.docker.com/r/yass0u20/myservice
+
+## Kubernetes Deployment
+
+Create the deployment using the Docker Hub image:
+
+kubectl create deployment myservice --image=yass0u20/myservice:1
