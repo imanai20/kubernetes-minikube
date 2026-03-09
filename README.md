@@ -392,3 +392,9 @@ https://hub.docker.com/r/yass0u20/myservice
 Create the deployment using the Docker Hub image:
 
 kubectl create deployment myservice --image=yass0u20/myservice:1
+
+## Rolling Update
+
+Update the deployment to the new version of the image:
+
+kubectl set image deployment/myservice myservice=yass0u20/myservice:2
